@@ -1,8 +1,5 @@
 import React, { useState } from 'react'
 
-// icons
-import { AiOutlineMenu, AiOutlineSearch } from 'react-icons/ai'
-
 // components
 import SearchModal from './SearchModal'
 import MenuModal from './MenuModal'
@@ -26,23 +23,73 @@ const Navbar = () => {
         />
       )}
       {/* <-- Modals End --> */}
-      <nav className="flex mx-6 my-3 z-10 items-end justify-between">
+      <nav className="flex z-10 justify-between items-center">
         <span
           onClick={() => setShowMenuModal(!showMenuModal)}
-          className="p-2 cursor-pointer text-2xl"
+          className="p-2 lg:hidden cursor-pointer text-2xl"
         >
-          <AiOutlineMenu />
+          <img
+            className="object-contain w-5"
+            src="https://www.muji.com/img/menu_b.png"
+            alt="mujiMenuIcon"
+          />
         </span>
-        <img
-          className="w-32 object-contain p-2 cursor-pointer"
-          src="https://www.muji.com/img/logo_muji_b.png"
-          alt="mujiLogo"
-        />
+        <span className="lg:flex gap-8">
+          <a href="/">
+            <img
+              className="w-[8.25rem] object-contain py-6 cursor-pointer"
+              src="https://www.muji.com/img/logo_muji_b.png"
+              alt="mujiLogo"
+            />
+          </a>
+          <span className="hidden gap-5 text-[13px] lg:flex items-center">
+            <a
+              href="https://www.muji.us/store/?utm_source=usa_global&utm_medium=top_menu"
+              className="menuList"
+            >
+              Online&nbsp;Store
+            </a>
+            <a href="https://ryohin-keikaku.jp/eng/about-muji/" className="menuList">
+              About&nbsp;MUJI
+            </a>
+            <a
+              href="https://info.muji.us/category/news/?area=header"
+              className="menuList"
+            >
+              News
+            </a>
+            <a
+              href="https://www.muji.us/pages/store-information"
+              className="menuList"
+            >
+              Store&nbsp;Info
+            </a>
+            <a href="https://www.muji.us/pages/contact-us" className="menuList">
+              Contact&nbsp;Us
+            </a>
+            <a
+              href="https://info.muji.us/press-inquries/?area=header"
+              className="menuList"
+            >
+              Press
+            </a>
+            <a href="https://www.muji.com/us/events/" className="menuList">
+              Events
+            </a>
+            <a href="https://info.muji.us/web-catalog/" className="menuList">
+              Web&nbsp;Catalog
+            </a>
+          </span>
+        </span>
         <span
           onClick={() => setShowSearchModal(!showSearchModal)}
-          className="p-2 cursor-pointer text-2xl"
+          className="pr-4 cursor-pointer text-2xl"
         >
-          <AiOutlineSearch />
+          <img
+            className="w-5 lg:w-4 object-contain"
+            src="https://www.muji.com/img/icon_search_b.png"
+            alt="mujiSearchIcon"
+          />
         </span>
       </nav>
     </>

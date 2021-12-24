@@ -6,7 +6,7 @@ import { AiOutlineSearch } from 'react-icons/ai'
 const SearchModal = ({ showSearchModal, setShowSearchModal }) => {
   return (
     <>
-      <div className="opacity-80 bg-black absolute top-0 left-0 w-screen h-screen">
+      <div className="opacity-80 z-50 lg:hidden bg-black absolute top-0 left-0 w-screen h-screen">
         <MdOutlineClose
           onClick={() => setShowSearchModal(!showSearchModal)}
           className="cursor-pointer text-white absolute text-3xl right-4 top-4"
