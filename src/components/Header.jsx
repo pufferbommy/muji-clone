@@ -2,14 +2,20 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <header className="mt-1">
+    <header className="mobile:mx-0 tablet:mx-6 pc:mx-12 mt-1">
       <a href="https://www.muji.us/pages/2021-holiday-gift-guide">
         <img
+          className="mobile:hidden tablet:block"
           src="https://info.muji.us/info/wp-content/uploads/2021/12/21_muji_gift_global_banner_pc.jpg"
           alt=""
         />
+        <img
+          className="mobile:block tablet:hidden"
+          src="https://info.muji.us/info/wp-content/uploads/2021/12/21_muji_gift_global_banner_sp.jpg"
+          alt=""
+        />
       </a>
-      <div className="grid grid-cols-4 gap-5 mt-5">
+      <div className="grid grid-cols-1 tablet:grid-cols-2 pc:grid-cols-4 gap-y-1 tablet:gap-2 tablet:gap-y-5 pc:gap-5 mt-1 tablet:mt-5">
         <a href="https://www.muji.com/us/events/">
           <img
             src="https://info.muji.us/info/wp-content/uploads/2021/06/MCM_panel-09.png"

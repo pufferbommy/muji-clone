@@ -1,10 +1,11 @@
 import React from 'react'
+
 // icons
 import { MdOutlineClose } from 'react-icons/md'
 
 const MenuModal = ({ showMenuModal, setShowMenuModal }) => {
   return (
-    <div className="opacity-80 z-50 md:hidden bg-black absolute top-0 left-0 w-screen h-screen">
+    <div className="opacity-80 z-50 pc:hidden bg-black fixed top-0 left-0 w-screen h-screen">
       <span>
         <MdOutlineClose
           onClick={() => setShowMenuModal(!showMenuModal)}

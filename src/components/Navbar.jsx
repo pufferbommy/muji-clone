@@ -23,10 +23,10 @@ const Navbar = () => {
         />
       )}
       {/* <-- Modals End --> */}
-      <nav className="flex z-10 justify-between items-center">
+      <nav className="flex mx-2.5 tablet:mx-9 pc:mx-12 z-10 justify-between items-center">
         <span
           onClick={() => setShowMenuModal(!showMenuModal)}
-          className="p-2 lg:hidden cursor-pointer text-2xl"
+          className="pc:hidden cursor-pointer text-2xl"
         >
           <img
             className="object-contain w-5"
@@ -34,15 +34,15 @@ const Navbar = () => {
             alt="mujiMenuIcon"
           />
         </span>
-        <span className="lg:flex gap-8">
+        <span className="pc:flex gap-8">
           <a href="/">
             <img
-              className="w-[8.25rem] object-contain py-6 cursor-pointer"
+              className="w-[6.75rem] pc:w-[8.25rem] object-contain py-6 cursor-pointer"
               src="https://www.muji.com/img/logo_muji_b.png"
               alt="mujiLogo"
             />
           </a>
-          <span className="hidden gap-5 text-[13px] lg:flex items-center">
+          <span className="hidden gap-5 text-[13px] pc:flex items-center">
             <a
               href="https://www.muji.us/store/?utm_source=usa_global&utm_medium=top_menu"
               className="menuList"
@@ -83,10 +83,10 @@ const Navbar = () => {
         </span>
         <span
           onClick={() => setShowSearchModal(!showSearchModal)}
-          className="pr-4 cursor-pointer text-2xl"
+          className={`pc:mr-4 cursor-pointer text-2xl`}
         >
           <img
-            className="w-5 lg:w-4 object-contain"
+            className="w-5 pc:w-4 object-contain"
             src="https://www.muji.com/img/icon_search_b.png"
             alt="mujiSearchIcon"
           />

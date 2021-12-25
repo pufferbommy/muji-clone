@@ -3,9 +3,13 @@
 @tailwind utilities;
 
 li {
-  @apply w-full cursor-pointer hover:text-gray-500;
+  @apply p-2 w-full cursor-pointer hover:text-gray-500;
 }
 
 .menuList {
   @apply cursor-pointer w-auto text-[#666] hover:text-gray-400;
+}
+
+body {
+  @apply overflow-scroll;
 }
