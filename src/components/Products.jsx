@@ -132,24 +132,19 @@ const data = {
   ],
 }
 
-// icons
-import { MdArrowForwardIos } from 'react-icons/md'
-
 // components
 import ProductList from './ProductList'
+import More from './More'
 
 const Products = () => {
   return (
     <section className="py-4 px-5 pc:px-12 mt-6 mobile:bg-gray-50 pc:bg-white lg:bg-white">
       <div className="flex justify-between">
         <h1 className="text-primary font-bold text-lg">Products</h1>
-        <a
-          href="https://www.muji.us/store/?utm_source=usa_global&utm_medium=product"
-          className="flex items-center gap-2"
-        >
-          <span className="text-sm text-secondary">Online Shop</span>
-          <MdArrowForwardIos className="text-sm fill-secondary" />
-        </a>
+        <More
+          title="Online Store"
+          destination="https://www.muji.us/store/?utm_source=usa_global&utm_medium=product"
+        />
       </div>
       <div>
         <ProductList data={data.clothes} />
