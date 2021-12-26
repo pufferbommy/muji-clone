@@ -5,7 +5,9 @@ const NewArrivalList = ({ products }) => {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    if (width >= 0 && width <= 480) {
+    if (!width) {
+      setIsMobile(false)
+    } else if (width >= 0 && width <= 480) {
       setIsMobile(true)
     } else {
       setIsMobile(false)
