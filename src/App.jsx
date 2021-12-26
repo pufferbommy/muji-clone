@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import Header from './components/Header'
 import Products from './components/Products'
 import NewArrivals from './components/NewArrivals'
+import StoreInfomation from './components/StoreInfomation'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Header />
         <Products />
         <NewArrivals />
+        <StoreInfomation />
       </div>
     </>
   )
