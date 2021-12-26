@@ -7,9 +7,9 @@ li {
 }
 
 .menuList {
-  @apply cursor-pointer w-auto text-[#666] hover:text-gray-400;
+  @apply cursor-pointer w-auto text-secondary hover:text-gray-400;
 }
 
 body {
-  @apply overflow-scroll;
+  @apply overflow-y-scroll;
 }
