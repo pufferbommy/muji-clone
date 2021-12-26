@@ -5,7 +5,7 @@ import More from './More'
 
 const StoreInfomation = () => {
   return (
-    <section className="mobile:p-0 tablet:p-12 flex flex-col gap-4 mb-10">
+    <section className="mobile:p-0 tablet:p-12 flex flex-col gap-4">
       <div className="flex mobile:px-6 tablet:px-0 justify-between">
         <h1 className="font-bold text-lg text-primary">Store Infomation</h1>
         <More title="More" destination="https://www.muji.com/storelocator/?c=us" />

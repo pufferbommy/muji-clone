@@ -6,6 +6,8 @@ import Header from './components/Header'
 import Products from './components/Products'
 import NewArrivals from './components/NewArrivals'
 import StoreInfomation from './components/StoreInfomation'
+import Socialbar from './components/Socialbar'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -16,6 +18,10 @@ const App = () => {
         <Products />
         <NewArrivals />
         <StoreInfomation />
+      </div>
+      <div>
+        <Socialbar />
+        <Footer />
       </div>
     </>
   )

@@ -13,3 +13,7 @@ li {
 body {
   @apply overflow-y-scroll;
 }
+
+hr {
+  @apply my-5;
+}
