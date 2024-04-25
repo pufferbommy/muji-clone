@@ -1,2 +1,3 @@
 # Demo
-![Screen Recording 2567-04-25 (1)](https://github.com/pufferbommy/muji-clone/assets/87512687/4af228de-de93-45d2-a24c-d84eae0f8df4)
+https://github.com/pufferbommy/muji-clone/assets/87512687/5a2e6da2-4c08-490d-9b67-a05200767233
+
